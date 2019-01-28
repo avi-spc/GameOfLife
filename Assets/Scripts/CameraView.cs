@@ -10,7 +10,7 @@ public class CameraView : MonoBehaviour
     void Start()
     {
         GameObject platform = GameObject.FindGameObjectWithTag("Platform");
-       // transform.position = new Vector3(platform.GetComponent<PlatformGenerator>().xSize / 2, platform.GetComponent<PlatformGenerator>().xSize, platform.GetComponent<PlatformGenerator>().zSize / 2);
+        transform.position = new Vector3(platform.GetComponent<PlatformGenerator>().xSize / 2, platform.GetComponent<PlatformGenerator>().xSize , platform.GetComponent<PlatformGenerator>().zSize / 2);
     }
 
     // Update is called once per frame
