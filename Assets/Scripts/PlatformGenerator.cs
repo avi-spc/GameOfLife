@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlatformGenerator : MonoBehaviour
 {
+    public Text simulationState;
+
     Vector3[] vertices;
 
     public int xSize;
@@ -20,13 +23,16 @@ public class PlatformGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        simulationState.text = "Initial configuration state";
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            simulationState.text = "Evolution state";
+        }
     }
 
     void GeneratePlatform() {

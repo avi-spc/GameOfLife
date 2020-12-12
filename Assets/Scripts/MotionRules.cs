@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class MotionRules : MonoBehaviour
 {
-
     public int neighboursCount;
     public GettingNeighbours gettingNeighbours;
     public int liveNeighbours, deadNeighbours;
@@ -13,7 +12,7 @@ public class MotionRules : MonoBehaviour
 
     private void Start()
     {
-        
+
     }
 
     private void Update()
